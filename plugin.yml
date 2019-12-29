@@ -2,6 +2,8 @@ name: LevelAPI
 api: 3.0.0
 version: 1.4.0
 main: mohagames\LevelAPI\Main
+author: Mohamed El Yousfi
+website: mohamedelyousfi.me
 
 commands:
   setlevel:
