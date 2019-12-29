@@ -1,0 +1,32 @@
+name: LevelAPI
+api: 3.0.0
+version: 1.4.0
+main: mohagames\LevelAPI\Main
+
+commands:
+  setlevel:
+    permission: lvl.setlevel
+  setxp:
+    permission: lvl.setxp
+  mylevel:
+    permission: lvl.mylevel
+  addlevel:
+    permission: lvl.addlevel
+  addxp:
+    permission: lvl.addxp
+  seelevel:
+    permission: lvl.seelevel
+
+permissions:
+  lvl.setlevel:
+    default: op
+  lvl.setxp:
+    default: op
+  lvl.mylevel:
+    default: op
+  lvl.addlevel:
+    default: op
+  lvl.addxp:
+    default: op
+  lvl.seelevel:
+    default: op
