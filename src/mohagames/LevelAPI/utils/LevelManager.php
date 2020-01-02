@@ -184,10 +184,10 @@ class LevelManager
         }
     }
 
-    public function addLevel(string $player, int $level)
+    public function addLevel(string $player, int $level, $flags = null)
     {
         $level += $this->getLevel($player);
-        $this->setLevel($player, $level);
+        $this->setLevel($player, $level, $flags);
     }
 
     public function addXp(string $player, int $xp, $flags = null)
@@ -201,10 +201,10 @@ class LevelManager
         $this->setXp($player, $this->getXp($player) - $xp, $flags);
     }
 
-    public function removeLevel(string $player, int $level)
+    public function removeLevel(string $player, int $level, $flags = null)
     {
         $new_level = $this->getLevel($player) - $level;
-        $this->setLevel($player, $new_level);
+        $this->setLevel($player, $new_level, $flags);
     }
 
     public static function getManager(): LevelManager

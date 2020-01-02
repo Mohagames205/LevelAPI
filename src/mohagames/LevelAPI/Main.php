@@ -57,7 +57,7 @@ class Main extends PluginBase implements Listener
             case "addlevel":
                 if (isset($args[0]) && isset($args[1])) {
                     if (is_numeric($args[1])) {
-                        $this->lvl_mngr->addLevel($args[0], $args[1]);
+                        $this->lvl_mngr->addLevel($args[0], $args[1], LevelManager::FLAG_SET_COMMAND);
                     }
                 }
                 return true;
